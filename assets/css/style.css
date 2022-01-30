@@ -26,28 +26,23 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin: 50px 0px;
 }
 .header img {
-  width: 480px;
-  height: 480px;
+  width: 320px;
+  margin-bottom: 50px;
 }
 .header .header-texto {
-  width: 80%;
-  padding: 0 200px;
+  width: 90%;
   text-align: center;
 }
 .header .texto-main {
   color: red;
 }
 .header h2 {
-  font-size: 16px;
-  color: whitesmoke;
-  margin-bottom: 50px;
-}
-.header h2 span {
   font-size: 20px;
-  color: yellow;
+  color: whitesmoke;
+  line-height: 2;
 }
 /* <!-- FECHA HEADER --> */
 
@@ -59,15 +54,14 @@ img {
   align-items: center;
   margin: 0 auto;
   width: 90%;
-  background: #111;
-  padding: 50px;
 }
 
 .video h3 {
   color: whitesmoke;
 }
 .video h3 span {
-  color: yellow;
+  font-size: 20px;
+  color: whitesmoke;
 }
 /* <!-- FECHA VIDEO --> */
 
@@ -79,31 +73,37 @@ img {
   align-items: center;
 }
 .nft-infos a {
-  padding: 15px 30px;
-  border-radius: 40px;
-  background-color: red;
-  box-shadow: 0 0 20px red, 0 0 20px red;
+  padding: 20px 40px;
+  border-radius: 2px;
+  background-color: #fce000;
   margin: 100px 0px;
 }
 .nft-infos .button span {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 700;
   color: whitesmoke;
+  text-shadow: 0 0 20px #111, 0 0 20px #111;
 }
 .infos {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
 }
 .infos .nft img {
   height: 500px;
+  margin-bottom: 50px;
 }
 .infos .texto-nft {
   font-size: 20px;
-  margin: 0px 100px;
-  width: 500px;
+  width: 80%;
+  text-align: center;
+  line-height: 1.5;
+}
+.infos .texto-nft h4 {
+  color: whitesmoke;
+  text-shadow: 0 0 20px #ccc, 0 0 20px #ccc;
 }
 .infos .texto-nft p {
   color: whitesmoke;
@@ -124,13 +124,15 @@ img {
   align-items: center;
 }
 .footer-infos .infos img {
-  width: 240px;
-  height: 240px;
+  width: 319px;
 }
 .infos .texto-footer p {
+  text-align: center;
+  font-size: 20px;
   color: whitesmoke;
 }
 .footer-infos .footer p {
+  font-size: 20px;
   margin-bottom: 50px;
   color: whitesmoke;
 }
@@ -140,17 +142,16 @@ img {
 @media (max-width: 767px) {
   /* <!-- ❗ ABRE HEADER --> */
   .header img {
-    width: 240px;
-    height: 240px;
+    width: 319px;
   }
-  .header .header-texto {
-    padding: 0 20px;
+  .header {
+    margin: 20px 0px;
   }
   .header h1 {
     font-size: 30px;
   }
   .header h2 {
-    font-size: 15px;
+    font-size: 13px;
   }
   .header h2 span {
     font-size: 18px;
@@ -160,13 +161,16 @@ img {
   /* <!-- ❗ ABRE VIDEO --> */
   .video {
     margin: 0 auto;
-    background: #111;
     padding: 5px;
     width: 100%;
     height: 280px;
   }
   .video iframe {
     width: 350px;
+  }
+  .video h3 span {
+    font-size: 20px;
+    color: whitesmoke;
   }
   /* <!-- FECHA VIDEO --> */
 
@@ -175,6 +179,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .nft-infos a {
+    padding: 20px 40px;
+    border-radius: 2px;
+    background-color: #fce000;
+    margin: 20px 0px;
   }
   .nft-infos .button span {
     font-size: 16px;
@@ -188,11 +198,10 @@ img {
   }
   .infos .nft img {
     height: 350px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .infos .texto-nft {
-    font-size: 15px;
-    margin: 0px 100px;
+    font-size: 18px;
     width: 90%;
   }
   /* <!-- FECHA NFT-INFOS --> */
@@ -205,12 +214,14 @@ img {
     align-items: center;
   }
   .footer-infos .infos img {
-    width: 100px;
-    height: 100px;
+    width: 319px;
   }
-  .footer-infos .infos .texto-footer {
+  .footer-infos .texto-footer p {
     width: 90%;
-    font-size: 10px;
+    font-size: 20px;
+  }
+  .footer-infos .footer p {
+    font-size: 16px;
   }
   /* <!-- FECHA FOOTER --> */
 }
