@@ -133,6 +133,7 @@ img {
 }
 .footer-infos .footer p {
   font-size: 20px;
+  margin-top: 50px;
   margin-bottom: 50px;
   color: whitesmoke;
 }
@@ -220,6 +221,8 @@ img {
     font-size: 12px;
   }
   .footer-infos .footer p {
+    margin-top: 0px;
+    margin-bottom: 20px;
     font-size: 16px;
   }
   /* <!-- FECHA FOOTER --> */
